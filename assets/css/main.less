@@ -1,0 +1,588 @@
+@font-face {
+    font-family:"Barbie MediumItalic";
+    src:url("../fonts/Barbie_MediumItalic/barbie.eot") format("eot"),
+    url("../fonts/Barbie_MediumItalic/barbie.woff") format("woff"),
+    url("../fonts/Barbie_MediumItalic/barbie.ttf") format("truetype"),
+    url("../fonts/Barbie_MediumItalic/barbie.svg#BarbieMediumItalic") format("svg");font-weight:normal;
+    font-style:normal;
+}
+@font-face {
+    font-family:"Trebuchet MS";
+    src:url("../fonts/Trebuchet_MS/Trebuchet_MS.ttf") format("ttf");
+    font-weight:normal;
+    font-style:normal;
+}
+html, body{
+    font-size:16px;
+}
+.wrapper{
+    max-width:1300px;
+    margin: 0 auto;
+
+    header{
+        .conteiner-menu {
+            margin-top: 7px;
+            background:linear-gradient(to top,#464646, #6c6c6c);
+            display:flex;
+            justify-content:space-around;
+
+            .menuElements{
+                text-decoration: none;
+                padding:0 10px;
+                display: inline-block;
+                height: 30px;
+                line-height:30px;
+                font-family: Arial;
+                font-size: 14px;
+                color:white;
+               }
+            nav{
+                .menuToggle1{
+                    .menuElements;
+                    display:none;
+                }
+                ul{
+                    
+                    border-left: 1px solid black;
+                    border-right: 1px solid #585858;
+    
+                    li{
+                        float:left;
+                        border-left: 1px solid #585858;
+                        border-right: 1px solid black;
+                        &:hover{
+                            background:#3d3b3b;
+                        }
+                        a{
+                            .menuElements;
+                        }
+                    }
+                }
+            } 
+        }
+        .container{
+            margin:0 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .logo{
+                text-align: center;
+
+                :first-child{
+                    text-decoration: none;
+                    color: #ff004e;
+                    font-size: 3.5rem;
+                    font-family: "Barbie MediumItalic";
+                }
+                .logo-font-min-little{
+                    text-decoration: none;
+                    color: #ff004e;
+                    font-size: 18px;
+                    font-family: "Barbie MediumItalic";
+                }
+                span {
+                    font-family:"Trebuchet MS";
+                    font-size: 12px;
+                }
+            }
+            form{
+                display: flex;
+                justify-content: space-between;
+                overflow: hidden;
+                align-self: flex-start;
+                align-items: center;
+                margin-top: 5px;
+                width: 565px;
+                .search{
+                    border:3px solid gray;
+                    width:345px;
+                    border-radius: 10px;
+                    padding-left: 5px;
+                    input, button{
+                        outline:none;
+                        font-family: Arial;
+                        font-size: 14px;
+                    }
+        
+                    .header-search{
+                        width:240px;
+                        height: 36px;
+                        border: none;
+                    }
+                    button {
+                        width:95px;
+                        height: 34px;
+                        background-image: linear-gradient(to top, #ff6e3c, #ff0000);
+                        color:white;
+                        border-radius:8px;
+                        border: 1px solid #b70000;
+                        &:active{
+                            background:#b70000;
+                        }
+                        &:hover{
+                            cursor:pointer;
+                        }
+                    } 
+                }
+                .header-download {
+                    input{
+                        font-family: "Trebuchet MS";
+                        font-size: 14px;
+                        border:none;
+                        outline:none;
+                        background: url('../../images/btn-download_new.jpg');
+                        height: 42px;
+                        width:180px;
+                        border:3px solid gray;
+                        border-radius: 10px;
+                        &:active{
+                            background: url('../../images/btn-download1.jpg');
+                            border:3px solid rgb(51, 50, 50);
+                        }
+                        &:hover{
+                            cursor:pointer; 
+                        }
+                    }
+                }
+            }
+            .social{
+                a{
+                    padding:10px;
+                    font-family:"Trebuchet MS";
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    .menu-catalog{
+        margin: 10px 10% 0 10%;
+        nav{
+            display: flex;
+            flex-direction: column;
+
+            .products >:first-child{
+                border-radius: 10px 0 0 0;
+            }
+            .products >:last-child{
+                border-radius:0 10px 0 0;
+            }
+            .products{
+                li{
+                    float: left;
+                    border:1px solid #d3d3d3;
+                    border-bottom: #3a3a3a;
+                    
+                    &:hover{
+                        background-image: linear-gradient(to top,#3a3a3a,#5c5c5c,);
+                        cursor:pointer;
+                        a{
+                            color: white;
+                        }
+                    }
+                    a{
+                        color:black; 
+                        text-decoration: none;
+                        display: block;
+                        padding:6px;   
+                    }
+                    
+                }
+            }
+            .sub-product{
+                background-image: linear-gradient(to top,#5c5c5c, #3a3a3a);
+                border-radius: 0  10px 10px 10px;
+                li{
+                    float: left;
+    
+                    &:hover{
+                        cursor:pointer;
+                        a{
+                            color:black; 
+                        }
+                    }
+                    a{
+                        color: white; 
+                        text-decoration: none;
+                        display: block;
+                        padding:6px;   
+                    }
+                } 
+            }
+        }
+    }
+    .container-aside-main{
+        margin: 15px 130px 0 130px;
+        display:flex;
+
+        aside{
+            min-width: 190px;
+           
+            p{
+                font-family: Arial;
+                font-size:12px;
+                padding-top: 15px;
+                padding-bottom: 5px;
+                font-weight: 700;
+            }
+            ul{
+                padding-left: 10px;
+                li{
+                    font-family: Arial;
+                    font-size:12px;
+                    a{
+                        text-decoration: none;
+                        &:hover{
+                            color: gray;
+                        }
+                    }
+                }
+            }
+        }
+        main{
+            width: 840px;
+            .slaid-banner{
+               display: flex;
+
+                .slaid{
+                    flex:2 0 10%;
+
+                    .slider_wrap {
+                       
+                        width:100%;
+                        height:97%;
+                        position:relative;
+                        overflow:hidden;
+                        img {
+                            width:90%;
+                            height:auto;
+                            display:none;
+                            position:absolute;
+                            top:0;
+                            left:5%;	
+                            }
+                        img:first-child {
+                            display:block;
+                            }
+                        span {
+                            margin-top:-13px;
+                            width:15px;
+                            height:26px;
+                            display:block;
+                            position:absolute;
+                            top:50%;
+                            cursor:pointer;
+                            background:url(../../images/slider2_arrow.png) no-repeat;
+                            }
+                        span.next {
+                            right:0;
+                            background-position:-15px 0;
+                            }
+                        span.next:hover {
+                            background-position:-15px -26px;
+                        }
+                        span.prev {
+                            left:0;
+                            background-position: 0 0;
+                        }
+                        span.prev:hover {
+                            background-position: 0 -26px;
+                        }
+                    }
+                        
+                          
+
+                  
+                }
+               .banner{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                   
+                    overflow: hidden;
+                    flex: 1 0 0%;
+                
+                    img{
+                        padding: 5px 0;
+                        width:90%;
+                    }
+                }
+            }
+            .sale{
+                background-image: linear-gradient(to top, #8b0901, #f9170a);
+                height:40px;
+                line-height: 40px;
+                border-radius: 10px;
+                margin: 40px 0px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                span, a{
+                    font-family: "Arial";
+                    font-style: italic;
+                    font-size: 1.5rem;
+                    color: white;
+                    text-shadow: 3px 2px 3px black;
+                }
+                div{
+                    height:100px;
+                    width: 100px;
+                    border-radius: 50px;
+                    text-align: center;
+                    line-height: 100px;
+                    background: url('../../images/sale.jpg');
+                    font-family: "Arial";
+                    font-size: 30px;
+                    color: white;
+                    text-shadow: 3px 2px 3px black;
+                }   
+            }
+            .banner2{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                img{
+                    border:3px solid gray;
+                    border-radius:10px;
+                    width: 28%;
+                }
+            }
+            .top-sales{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+                border:3px solid gray;
+                border-radius:10px;
+                margin-top: 15px;
+                .top-sales-sticker {
+                    height: 20px;
+                    width: 140px;
+                    background: #b82312;
+                    position: absolute;
+                    top: 0;
+                    left: 25px;
+                    font-size: 1.2rem;
+                    text-align: center;
+                    color: white;
+                    }
+                .top-sales-sticker:before {
+                    content: "";
+                    height: 0;
+                    width: 0;
+                    position: absolute;
+                    left: 0;
+                    top: 20px;
+                    border-top: 20px solid #b82312;
+                    border-left: 70px solid transparent;
+                    border-right: 70px solid transparent;
+                    }
+                img{
+                    border:3px solid gray;
+                    border-radius:10px;
+                    margin: 60px 1% 10px 1%;;
+                    width: 28%; 
+                }
+            }
+            .new-products{
+                border: 1px solid gray;
+                margin-top: 15px;
+                p{
+                    padding: 15px;
+                    font-family: "Arial";
+                    font-size: 14px;
+                    color: #939393;
+                }
+                .catalog-new-products{
+                    display:flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    >div{
+                        width: 245px;
+                        margin: 10px;
+                        position: relative;
+                        overflow: hidden;
+
+                        .specifications{
+                            position:absolute;
+                            top: 0;
+                            right: 0;
+                            width: 105px;
+                            h3{
+                                font-family: "Arial";
+                                font-size: 18px;
+                                color: #939393;
+                            }
+                            div{
+                                font-family: "Arial";
+                                font-size: 12px;
+                                margin: 5px;
+                            }
+                            span{
+                                font-family: "Arial";
+                                font-size: 24px;
+                                color: red;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .mess{
+                font-size: 4rem;
+                color: #b82312;
+                text-align: center;
+                padding-top: 40px;
+                img{
+                    width: 70%;
+                    padding-top: 20px;
+                }
+            }
+        }
+    }
+    footer{
+        .tel{
+            margin-top: 105px;
+            background: #bcbcbc;
+            height:5rem;
+            position: relative;
+
+            .tel-info{
+                padding: 0.2rem 33% 0 0 ;
+                text-align: center;
+            
+                span{
+                    font-family: "Trebuchet MS";
+                    font-size: 0.875rem;
+                    color:#737373;
+                    text-shadow: 1px 1px 1px white;
+                }
+                a{
+                    font-family: "Trebuchet MS";
+                    font-size: 2.25rem;
+                    color:#737373;
+                    text-decoration: none;
+                    text-shadow: 1px 1px 1px white;
+                } 
+            }
+            img{
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+            }  
+        }
+        .main-footer-container{
+            height:285px;
+            overflow: hidden;
+            background:#cddbdf;
+            .main-footer__main{
+                display:flex;
+                height: 100%;
+               
+                nav{
+                    display: flex;
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+                    width:50%;
+                    padding: 10px 0 0 10%;
+                    div{
+                        margin: 0 10px;
+                        p{
+                            font-family: "Arial";
+                            font-size: 12px;
+                        }
+                        ul{
+                            padding: 15px 0 15px 10px;
+                            li{
+                                font-family: "Arial";
+                                font-size: 12px;
+                                a{
+                                    text-decoration: none;
+                                    &:hover{
+                                        color: gray;
+                                    }  
+                                }
+                            }
+                        }
+                    }  
+                }
+                .main-footer__content{
+                    font-family: "Arial";
+                    font-size: 12px;
+                    padding-top: 10px;
+                    text-align: justify;
+                    width: 20%;
+                }
+                .main-footer__social{
+                    width: 30%;
+                    .footer-social{
+                        border:3px solid gray;
+                        border-radius: 10px;
+                        width:240px;
+                        background: white;
+                        text-align: center;
+                        margin: 10px auto;
+                        padding: 25px 0;
+                        div{
+                            a{
+                                font-family: "Trebuchet MS";
+                                font-size: 12px;
+                                padding: 10px;
+                                text-decoration: none;
+                            }
+                        } 
+                    }
+                    .header-download {
+                        text-align: center;
+                        margin: 10px 0;
+                         
+                        input{
+                            font-family: "Trebuchet MS";
+                            font-size: 14px;
+                            border:none;
+                            outline:none;
+                            background: url('../../images/btn-download_new.jpg');
+                            height: 42px;
+                            width:180px;
+                            border:3px solid gray;
+                            border-radius: 10px;
+                            &:active{
+                                background: url('../../images/btn-download1.jpg');
+                                border:3px solid rgb(51, 50, 50);
+                            }
+                            &:hover{
+                                cursor:pointer;
+                            }
+                        }  
+                    }
+                    .footer-social-support{
+                        P{
+                            text-align: center;
+                            margin:15px 0;
+                        }
+                        div{
+                            text-align: center;
+                        }
+                    }
+                }     
+            }
+        }
+        .main-footer-copyright{
+            background: #cddbdf;
+            border-top: 1px solid #3a3a3a;
+            height:105px;
+            display: table-cell;
+            vertical-align: middle;
+            
+            div{
+                text-align: center;
+                margin: 15px 20%;
+            }
+        }
+    }
+    //_______________________________________slaid
+    
+}
